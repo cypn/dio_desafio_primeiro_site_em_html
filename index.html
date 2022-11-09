@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo I - Introdução ao html</title>
+</head>
+<body>
+    <h1 id="inicio"> Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr/>
+    
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Qual a estrutura básica de um HTML?</a></li>
+        <li><a href="#lista">Entendendo a diferença entre listas ordenadas e não-ordenadas</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ul>
+
+    <h2 id="historia">História dos computadores</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>
+        A história da computação se iniciou muito antes da criação dos primeiros computadores, com a criação de algoritmos e máquinas de cálculo.
+        Durante a segunda guerra mundial <b>Alan Turing</b> criou o primeiro computador para decodificar as mensagens enviadas pelo exército alemão.
+        Os primeiros computadores tinham como objetivo resolver problemas matemáticos especificos e sua programação era muito mais complexa. 
+        Eles ocupavam um espaço enormes e eram operados apenas por profissionais especializados.
+        Com o avanço da tecnologia, os computadores foram diminuindo e tendo cada vez mais funções. Sistemas operaionais foram criados e a 
+        interatividade com o usuário, através de telas, teclado e mouse, possibilitaram a utilização dos computadores por pessoas leigas, 
+        uma vez que a programação foi escondida em sistemas e aplicativos e só mostram ao usuário o resultado final.
+        A criação da internet foi dada a partir da necessidade de transferência de arquivos entre computadores, partindo da comunicação de 
+        código morse até chegar em uma transmissão entre dispositivos. Como padrão foram definidos protocolos, linguagens e parametros para 
+        garantir a comunicação entre todos os dispositivos da mesma forma,alguns exemplos de padronizações são tcp-ip, http, www, etc.
+
+    </p>
+    
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>
+        Segundo o ponto de vista do HTML <i>clients</i>, também chamados de clientes, são aqueles que consomem informações da internet 
+        ou de outro tipo de rede de informação. Para isso são necessários dispositivos como celulares, computadores e tablets. 
+        Arquivos estáticos são enviados do servidor para o cliente, depende da velocidade de conexão do cliente e do tamanho dos arquivos.
+        Exemplos de arquivos estáticos: HTML, CSS, Javascript, imagens...
+        Esses arquivos estáticos são armazenados no cache dentro do navegador do cliente para diminuir o trafego de dados com informações 
+        pré carregadas, o cache é sobreescrito quando a página é recarregada.
+        Ao desenvolver um site ou aplicação deve-se considerar os diferentes dispositivos que podem acessar os sites, isso é chamado de 
+        Design Responsivo ou responsividade.
+        Boas práticas e testes: verificar compatibilidade com diferentes navegadores, podem haver comportamentos diferentes no mesmo dispositivo
+         de acordo com a interpretação do navegador.
+    </p>
+    <h3>Navegadores:</h3>
+    <p>
+        São programas instalados no dispositivo que interpretam os arquivos que vem do servidor web. Também chamados de browsers.      
+        Seguem o padrão W3C, base é a mesma para todos. O que significa que as tags mais básicas devem funcionar em todos os navegadores
+        São ferramentas para utilizar a internet.
+    </p>
+
+    <h3>Aplicações Web</h3>
+    <p>Aplicações web são soluções criadas que possuem a internet como meio de comunicação entre <i>client</i> x <i>server</i> não sendo necessária a sua instalação.
+  
+        Elas são acessadas através do navegador.
+          
+        Apps instalados tem outra abordagem de programação. Existem semelhanças, mas são diferentes na forma de programação.</p>
+    
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>
+        Os <i>Servers</i>, ou servidores, são computadores mais robustos do que os de usuários, eles exigem processamento maior e 
+        servem a vários dispositivos. Ele pode ser ligado a internet ou pode ser conectado a uma rede local <abbr title="Local Area Network">LAN</abbr>, 
+        geralmente empresas, computadoor central é um servidor. Pode se conectar com bancos de dados.        
+        Sites são hospedados em servidor. <i>Data centers</i> são conjuntos de servidores.
+          
+    </p>
+    <p> Alguns tipos de servidores são: 
+        <ul>
+            <li>Arquivos (central de imagens, videos, etc)</li>
+            
+            <li>Segurança (<i>Firewall</i>)</li>
+            
+            <li><i>Streaming</i> (principalmente videos)</li>
+            
+            <li> E-mail (Armazena e envia os e-mails)</li>
+
+            <li>Web</li>
+        </ul>
+        
+    </p>
+
+    <h2 id="estrutura">Qual a estrutura básica de um HTML?</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>
+        O arquivo index é o padrão de pasta principal do site. As tags apresentam a seguinte estrutura:
+        <ul>          
+          <li>< nome_da_tag> : abre</li>
+            
+          <li>< /nome_da_tag>: fecha</li>
+        </ul>    
+        
+        As tags principais:
+          <ul>
+            <li>html: tudo entre ela é uma página html</li>
+            <li>head: carrega antes de exibir para o usuário</li>
+            <li>title: nome que aparece na aba</li>
+            <li>body: aparece para o usuário</li>
+        </ul>
+        Uma estrutura básica ficaria:
+    <blockquote>
+        < html><br/>
+        < head> <br/>
+          <ul>  < title> <i>Aqui coloca-se o título</i> < /title><br/></ul>
+        < /head><br/>
+        < body><br/>
+            <ul><i>Aqui vai todo o conteúdo do site</i><br/></ul>
+        < /body><br/>
+        < /html><br/>
+    </blockquote>    
+    </p>
+
+    <h2 id="lista">Entendendo a diferença entre listas ordenadas e não-ordenadas</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <p>
+       Listas ordenadas são aquelas em que os elementos são identificados em com marcadores ordenados,utilizados em rankings, modo de preparo de receitas entre outros. Por exemplo:
+       <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+       </ol>
+       Já as listas não-ordenadas são identificadas por marcadores iguais, esse tipo de lista é utilizado em tópicos e em listas em que a ordem dos elementos não tem tanta importância. Por exemplo:
+       <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+       </ul> 
+    </p>
+    <h2 id="links">Links de referências</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <ul>
+        <li><a href="https://www.w3schools.com/html/default.asp">w3schools</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Documentação HTML MDN</a></li>
+        <li><a href="https://www.youtube.com/watch?v=SV7TL0hxmIQ">HTML para iniciantes Matheus Battisti</a></li>
+    </ul>
+
+
+</body>
+</html>
